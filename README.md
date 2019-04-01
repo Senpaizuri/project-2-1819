@@ -1,36 +1,42 @@
-# Project 2 @cmda-minor-web · 2018-2019
+# Volkswagen [Project 2]
 
-## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
+From zero 🚘 to (accesible) hero 🏎
 
-Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (Valtech, Mirabeau & CMD Amsterdam). De aanbevelingen betreffen het verbeteren van toegankelijkheid en performance van de web sites / applicaties. Technieken geleerd bij [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
+Assignment:
+Help ValTech_ 👨‍💻 with the Volkswagen 🚘 website.
+They haven't done anything with performance nor accesibility and needs Us to improve the site.
 
-## Programma
-Maandag - 9.30 - kickoff
-Woensdag - voortgangbespreking
-Vrijdag presentatie
+## Breakdown
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan optimaliseren van toegankelijkheid en performance van een website. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) begrijpt en beheerst.
+[`AXE ♿️`](https://www.deque.com/axe/) reveals some issues.
 
-Iedere dag zijn er coaches aanwezig voor coaching en feedback. We sluiten de dag af met een stand up, om de status door te spreken. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
+![screenshot axe issues](/screenshots/axe-before.png)
 
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten kijken naar je code en beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. De opdrachtgver is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
+It reveals at least 70 cases of contrast issues on the homepage alone.
+Detail pages have the exact same problem, however it al seems to boil down to the same few colors.
 
-Het project telt als AVV mee met de Meesterproef.
+1. `#00b1eb` in combination with `#f1f4f5` || `#fff` ([2.23](https://webaim.org/resources/contrastchecker/?fcolor=00b1eb&bcolor=f1f4f5),[1.59](https://webaim.org/resources/contrastchecker/?fcolor=00b1eb&bcolor=fff) respectively) used for most links, buttons and highlights
+2. `#ccc` on `#dae2e5` ([4.41](https://webaim.org/resources/contrastchecker/?fcolor=ccc&bcolor=dae2e5)) used in the footer
 
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
+This issue could be resolved fairly easy with just bumping up the contrast on the blue `#00b1eb` to something like `#005470` ([7.59](https://webaim.org/resources/contrastchecker/?fcolor=00b1eb&bcolor=f1f4f5))
 
-### Browser Technologies
-In het vak [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819)) heb je geleerd wat de core functionalitiet van een web toepassing is en hoe je deze functionaliteit met progressive enhancement kan opbouwen tot een robuste web teopassing. Ook heb je geleerd hoe hiermee de toegankelijkheid van een web toepassing kan worden verbeterd. 
+![Old contrast volkswagen website](/screenshots/contrast/old.png)
 
-### Performance Matters
-In het vak [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) heb je geleerd hoe je een web toepassing (ogenschijnlijk) sneller kan maken en ook offline kan laten werken. Hiermee verbeter je de gebruikservaring van de web toepassing in alle omstandigheden.  
+to
+
+![New contrast volkswagen website](/screenshots/contrast/new.png)
+
+This boosts the contrast ratio significantly.
+Namely from a measily 2.23 to a whopping 7.59 👀.
+Usually only a contrast ratio of 4.5 is needed, but for smaller/thinner text it is recommended to have a greater contrast.
+
+Let's persume the end user is outside, it's a lovely sunny day ☀️ really, and decides to visit the site to look for a car to cruise away in the upcoming summer. Then this is what the site may look like.
+
+![screenshot of homepage with simulated sunny weather](/screenshots/contrast/sunny.png)
+
+With the "new" color it would look something like this.
+
+![screenshot of homepage with simulated sunny weather](/screenshots/contrast/sunny-new.png)
 
 
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de opdrachtgever. 
-- Github met je code en readme.
-
+Thus I recommend to change the main blue color to something that creates more contrast.
