@@ -3,7 +3,7 @@
 From zero 🚘 to (accesible) hero 🏎
 
 Assignment:
-Help ValTech_ 👨‍💻 with the Volkswagen 🚘 website.
+Help [`ValTech_ 👨‍💻`](https://www.valtech.com/) with the [`Volkswagen 🚘`](https://www.wolkswagen.nl) website.
 They haven't done anything with performance nor accesibility and needs Us to improve the site.
 
 [Current site 🚘](https://www.volkswagen.nl)
@@ -19,9 +19,10 @@ They haven't done anything with performance nor accesibility and needs Us to imp
 [`Lighthouse 🕯`](https://developers.google.com/web/tools/lighthouse/) also has a few issues with the site.
 
 1. Uncompressed images
-2. image formats
-3. renderblocking CSS
-4. Preconnected resources
+2. Image formats
+3. Renderblocking CSS
+4. Cache fonts
+5. Preconnected resources
 
 ## Contrast Issues 🚫
 
