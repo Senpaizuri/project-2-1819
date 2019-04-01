@@ -6,12 +6,22 @@ Assignment:
 Help ValTech_ 👨‍💻 with the Volkswagen 🚘 website.
 They haven't done anything with performance nor accesibility and needs Us to improve the site.
 
+[Current site 🚘](https://www.volkswagen.nl)
+[Improved site 🏎 [WIP]](https://senpaizuri.github.io/project-2-1819/)
+
 # Breakdown 🔨
 
 [`AXE ♿️`](https://www.deque.com/axe/) reveals some issues.
 
 1. Contrast
 2. Labeling
+
+[`Lighthouse 🕯`](https://developers.google.com/web/tools/lighthouse/) also has a few issues with the site.
+
+1. Uncompressed images
+2. image formats
+3. renderblocking CSS
+4. Preconnected resources
 
 ## Contrast Issues 🚫
 
