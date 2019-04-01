@@ -6,9 +6,14 @@ Assignment:
 Help ValTech_ 👨‍💻 with the Volkswagen 🚘 website.
 They haven't done anything with performance nor accesibility and needs Us to improve the site.
 
-## Breakdown
+# Breakdown 🔨
 
 [`AXE ♿️`](https://www.deque.com/axe/) reveals some issues.
+
+1. Contrast
+2. Labeling
+
+## Contrast Issues 🚫
 
 ![screenshot axe issues](/screenshots/axe-before.png)
 
@@ -40,3 +45,25 @@ With the "new" color it would look something like this.
 
 
 Thus I recommend to change the main blue color to something that creates more contrast.
+
+## Labeling issue 🏷
+
+[`AXE ♿️`](https://www.deque.com/axe/) also reveals an issue with the license plate form.
+
+![Screenshot of license plate](/screenshots/license-issue.png)
+
+This issue could be resolved with minimum effort and will improve not only it's PE but also it's usablility.
+
+```html
+<!-- Current code -->
+<input type="text" name="licensePlate" placeholder="Vul hier je kenteken in" maxlength="8">
+
+<!-- Suggested Code -->
+<label for="licensePlate">
+    Vul hier je kenteken in:
+    <input id="licensePlate" type="text" name="licensePlate" placeholder="abc123fg" maxlength="8">
+</label>
+```
+
+This doens't only improve the PE but also allows screenreaders to read the previous placeholder text to the user.
+Also, say you've already filled in 1 character the placeholder disappears. Using a label here just makes sense.
