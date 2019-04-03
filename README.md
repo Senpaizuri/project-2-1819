@@ -71,7 +71,7 @@ This issue could be resolved with minimum effort and will improve not only it's 
 
 <!-- Suggested Code -->
 <label for="licensePlate">
-    Vul hier je kenteken in:
+    <span>Vul hier je kenteken in:</span>
     <input id="licensePlate" type="text" name="licensePlate" placeholder="abc123fg" maxlength="8">
 </label>
 ```
