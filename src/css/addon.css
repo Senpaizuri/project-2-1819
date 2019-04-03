@@ -1,0 +1,14 @@
+.m-tile__image{
+    background: #42424200;
+    animation: 3s ease blink infinite;
+    min-height: 300px;
+}
+
+@keyframes blink{
+    0%,100%{
+        background: #42424200;
+    }
+    50%{
+        background: #424242ff;
+    }
+}
