@@ -1,6 +1,6 @@
 # Volkswagen [Project 2]
 
-From zero 🚘 to (accesible) hero 🏎
+From zero 🚘 to (accesible/performance) hero 🏎
 
 Assignment:
 Help [`ValTech_ 👨‍💻`](https://www.valtech.com/) with the [`Volkswagen 🚘`](https://www.wolkswagen.nl) website.
@@ -8,6 +8,16 @@ They haven't done anything with performance nor accesibility and needs Us to imp
 
 [Current site 🚘](https://www.volkswagen.nl) <br>
 [Improved site 🏎 [WIP]](https://senpaizuri.github.io/project-2-1819/)
+
+# Top 5 Improvements
+
+1. Contrast
+2. Critical CSS
+3. Compressed/Next-gen images
+4. Service Workers for serving from cache
+5. Compress statische assets
+
+Point 1,2 and 3 are fairly low effort points with a high reward.
 
 # Breakdown 🔨
 
@@ -159,6 +169,27 @@ if("serviceWorker" in navigator){
     })
 }
 ```
+
+Serving the page without the cache renders the page in about **3-4s**
+With the cache it's able to fully load the page in **0.3s**!
+
+![SW](/screenshots/sw.png)
+![SW](/screenshots/swf.png)
+
+# Final build
+
+![](/screenshots/swfull.png)
+
+The final build gives us these results on a fast 3g network.
+
+| |Final|Original|
+|--|--|--|
+|FCP|1.6s|1.7s|
+|FCP(Cache)|0.3s|-|
+|FMP|2.8s|4.8s|
+|FMP(Cache)|0.5s|-|
+
+
 
 # Wishlist
 - [ ] HTTP2
