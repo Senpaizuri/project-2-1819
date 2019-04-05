@@ -58,3 +58,5 @@ self.addEventListener("fetch",(e)=>{
 self.addEventListener("redundant",(e)=>{
     console.log(e)
 })
+
+// TODO: DynamicCaching
