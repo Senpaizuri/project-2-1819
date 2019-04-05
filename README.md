@@ -7,7 +7,7 @@ Help [`ValTech_ 👨‍💻`](https://www.valtech.com/) with the [`Volkswagen �
 They haven't done anything with performance nor accesibility and needs Us to improve the site.
 
 [Current site 🚘](https://www.volkswagen.nl) <br>
-[Improved site 🏎 [WIP]](https://senpaizuri.github.io/project-2-1819/)
+[Improved site 🏎](https://volkswagen-p2.herokuapp.com/)
 
 # Top 5 Improvements
 
