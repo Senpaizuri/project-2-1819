@@ -176,7 +176,7 @@ With the cache it's able to fully load the page in **0.3s**!
 ![SW](/screenshots/sw.png)
 ![SW](/screenshots/swf.png)
 
-# Final build
+# Final build 🏎
 
 ![](/screenshots/swfull.png)
 
@@ -189,7 +189,7 @@ The final build gives us these results on a fast 3g network.
 |FMP|2.8s|4.8s|
 |FMP(Cache)|0.5s|-|
 
-
+Improvements all round!
 
 # Wishlist
 - [ ] HTTP2
