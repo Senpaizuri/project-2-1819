@@ -11,18 +11,20 @@ They haven't done anything with performance nor accesibility and needs Us to imp
 
 # Breakdown 🔨
 
-[`AXE ♿️`](https://www.deque.com/axe/) reveals some issues.
+[`AXE ♿️`](https://www.deque.com/axe/) reveals some accesibility issues.
 
 1. Contrast
 2. Labeling
 
-[`Lighthouse 🕯`](https://developers.google.com/web/tools/lighthouse/) also has a few issues with the site.
+[`Lighthouse 🕯`](https://developers.google.com/web/tools/lighthouse/) reveals some performance issues with the site.
 
 1. Uncompressed images
 2. Image formats
 3. Renderblocking CSS
 4. Cache fonts
 5. Preconnected resources
+
+# Accesibility Issues ️️♿️
 
 ## Contrast Issues 🚫
 

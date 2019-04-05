@@ -2,10 +2,10 @@ const
     express = require("express"),
     app = express(),
     ejs = require("ejs"),
-    ejsLint = require("ejs-lint"),
     compression = require("compression"),
     port = process.env.PORT || 5000
-    
+
+// HTTP2 Not (yet) natively supported with express :(
 // Compression settings
 app.use(compression())
 
@@ -14,16 +14,21 @@ app.set("view engine", "ejs")
 
 app.use(express.static("src"))
 
-ejsLint("home")
-
-
 // Routing
 app.get("/",(req,res)=>{
     res.setHeader("Cache-Control","n-cache")
-    res.render("pages/home")
+    res.status(200).render("pages/home")
     res.on("close",()=>{
         res.flush()
     })
+})
+
+app.get("/api/sitecore/MyDealer/getMyDealer/",(req,res)=>{
+    res.send(`{
+        "success": false,
+        "key": "pon-user-my-dealer",
+        "data": null
+      }`)
 })
 
 app.listen(port,()=>{

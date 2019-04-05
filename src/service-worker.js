@@ -1,6 +1,6 @@
 const CORE_CACHE_VERSION = 1
 const CORE_CACHE_NAME = "core-cache-v" + CORE_CACHE_VERSION
-const CORE_ASSETS = ["/","/js/dist/scripts.min.js","/css/dist/styles.min.css","/css/addon.css"]
+const CORE_ASSETS = ["/","/js/dist/scripts.min.js","/css/dist/styles.min.css","/css/addon.css","/fonts/VWHeadWeb-Bold.woff2","/fonts/VWTextWeb-Regular.woff2","/fonts/VWHeadWeb-Regular.woff2"]
 
 
 self.addEventListener("install",(e)=>{
